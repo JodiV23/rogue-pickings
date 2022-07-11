@@ -1,8 +1,6 @@
 html {
 	font-size: 16px;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+	
 
 
 }
@@ -10,7 +8,7 @@ html {
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	font-size: 1em;
 	flex-flow: row wrap;
@@ -22,9 +20,8 @@ body {
 
 .container {
 	max-width: 1200px;
-	width: 100%;
+	width: 90%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
 	text-align: center;
@@ -168,8 +165,8 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-	
-	width: 33%;
+
+	width: 100%;
 	height: auto;
 	justify-content: center;
 	border-top: 1px solid #eee;
@@ -179,13 +176,13 @@ header nav ul li a {
 
 .section-one h3 {
 	padding: 10px 0;
-	
+
 	justify-content: center;
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-left: 1px dotted #77a466;
+	border-right: 1px dotted #77a466;
 
 	justify-content: center;
 }
@@ -244,22 +241,21 @@ footer span {
 
 @media all and (min-width:768px) {
 	header nav ul {
-		justify-content: space-between;
-		align-items: center;
-		width: 30%;
-		flex-flow: row wrap;
+		padding: 50px;
+		font-size: x-large;
 	}
 
 	.section-two {
-		border-left: .23px solid #77a466;
-		border-right: 3px solid #77a466;
+		border-left: .23px dotted #77a466;
+		border-right: .23px dotted #77a466;
 	}
 
 	.section-one,
 	.section-three,
 	.section-two {
-		justify-content: space-around;
-		align-items: center;
+		width: 30%;
+		justify-content: center;
+		align-items:initial;
 		flex-flow: row wrap;
 		flex-basis: auto;
 	}
@@ -284,35 +280,59 @@ footer span {
 
 @media all and (min-width:1200px) {
 
-	header h1 {
-		width:100% ;
-		padding:0 10px ;
-		border-bottom: 3px solid #77a466 ;
-		text-align: left;
-	  }
+	header h1 {border: none;
+	text-align: left;}
+
+	header {flex-flow:nowrap;}
+
+	header nav ul li {font-size: 14px;
+		padding: 0 10px;
+		display: inline;
+
+	}
+	header nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	header nav {
+	width: 90%;
+		padding: 46px 0;
+	}
+
+	.section-one{border-bottom: #77a466 .23 dotted;}
 
 	.section-two {
-		border-left: 3px solid #77a466;
-		border-right: 3px solid #77a466;
+		border-left: .23px dotted #77a466;
+		border-right: .23px dotted #77a466;
+		justify-content: center;
+		border-bottom: #77a466 .23 dotted;
+	}
+	.section-three {border-bottom: #77a466 .23 dotted;}
+	
+	
 	}
 
 	.section-one,
 	.section-three,
 	.section-two {
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		flex-flow: row wrap;
 		flex-basis: auto;
+	border-bottom: #77a466 .23 dotted;
 	}
 
 	.main-image {
 		justify-content: center;
 		align-items: center;
-		border-top: #77a466 solid 3px;
+		
 	}
-
+.top-section h2 {
+	text-align: left;
+}
 	.bottom-section {
-		width: 90%;
+		
+		width: 100%;
 		justify-content: center;
 		flex-basis: auto;
 		align-items: center;
