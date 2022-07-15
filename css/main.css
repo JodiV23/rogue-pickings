@@ -1,6 +1,6 @@
 html {
 	font-size: 16px;
-	
+
 
 
 }
@@ -12,7 +12,7 @@ body {
 	align-items: center;
 	font-size: 1em;
 	flex-flow: row wrap;
-	text-align: center;
+
 	flex-shrink: initial;
 	flex-grow: initial;
 	width: 100%;
@@ -67,6 +67,7 @@ header {
 	align-items: center;
 	flex-flow: row wrap;
 	text-align: center;
+	list-style: none;
 
 }
 
@@ -90,7 +91,7 @@ header h1 span {
 
 header nav {
 
-	width: 30%;
+	width: 100%;
 	padding: 46px 0;
 	justify-content: space-between;
 	align-items: initial;
@@ -109,17 +110,17 @@ header nav ul {
 	padding: 0;
 }
 
-header nav ul li {
+header nav ul {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
 	padding: 0 10px;
-	display: inline;
+
 
 }
 
-header nav ul li a {
+header nav ul a {
 	text-decoration: none;
 	color: #77a466;
 }
@@ -171,7 +172,7 @@ header nav ul li a {
 	justify-content: center;
 	border-top: 1px solid #eee;
 	flex-basis: auto;
-	align-items: center;
+	align-items: initial;
 }
 
 .section-one h3 {
@@ -181,8 +182,7 @@ header nav ul li a {
 }
 
 .section-two {
-	border-left: 1px dotted #77a466;
-	border-right: 1px dotted #77a466;
+
 
 	justify-content: center;
 }
@@ -202,7 +202,7 @@ header nav ul li a {
 	padding: 0;
 }
 
-.menu li {
+.menu ul {
 	padding: 10px 0;
 	color: #77a466;
 }
@@ -220,7 +220,7 @@ header nav ul li a {
 
 /*The widths are in a percentage!*/
 footer {
-
+	width: 100%;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	text-align: center;
@@ -255,7 +255,7 @@ footer span {
 	.section-two {
 		width: 30%;
 		justify-content: center;
-		align-items:initial;
+		align-items: initial;
 		flex-flow: row wrap;
 		flex-basis: auto;
 	}
@@ -280,26 +280,35 @@ footer span {
 
 @media all and (min-width:1200px) {
 
-	header h1 {border: none;
-	text-align: left;}
+	header h1 {
+		border: none;
+		text-align: left;
+	}
 
-	header {flex-flow:nowrap;}
+	header {
+		flex-flow: nowrap;
+	}
 
-	header nav ul li {font-size: 14px;
+	header nav ul {
+		font-size: 14px;
 		padding: 0 10px;
 		display: inline;
 
 	}
+
 	header nav ul {
 		margin: 0;
 		padding: 0;
 	}
+
 	header nav {
-	width: 90%;
+		width: 90%;
 		padding: 46px 0;
 	}
 
-	.section-one{border-bottom: #77a466 .23 dotted;}
+	.section-one {
+		border-bottom: #77a466 .23 dotted;
+	}
 
 	.section-two {
 		border-left: .23px dotted #77a466;
@@ -307,36 +316,41 @@ footer span {
 		justify-content: center;
 		border-bottom: #77a466 .23 dotted;
 	}
-	.section-three {border-bottom: #77a466 .23 dotted;}
-	
-	
+
+	.section-three {
+		border-bottom: #77a466 .23 dotted;
 	}
 
-	.section-one,
-	.section-three,
-	.section-two {
-		justify-content: center;
-		align-items: center;
-		flex-flow: row wrap;
-		flex-basis: auto;
+
+}
+
+.section-one,
+.section-three,
+.section-two {
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	flex-basis: auto;
 	border-bottom: #77a466 .23 dotted;
-	}
+}
 
-	.main-image {
-		justify-content: center;
-		align-items: center;
-		
-	}
+.main-image {
+	justify-content: center;
+	align-items: center;
+
+}
+
 .top-section h2 {
 	text-align: left;
 }
-	.bottom-section {
-		
-		width: 100%;
-		justify-content: center;
-		flex-basis: auto;
-		align-items: center;
-	}
 
-	/* Desktop styles here */
+.bottom-section {
+
+	width: 100%;
+	justify-content: center;
+	flex-basis: auto;
+	align-items: center;
+}
+
+/* Desktop styles here */
 }
